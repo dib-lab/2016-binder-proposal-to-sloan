@@ -2,13 +2,13 @@
 
 (Note from Titus: this proposal to the Sloan Foundation was submitted back in May, and was chosen for funding. See http://ivory.idyll.org/blog/2016-mybinder-workshop-proposal.html and comments for updates.)
 
-Summary:
+## Summary:
 
 
 We propose to host a hackfest (cooperative hackathon) workshop to enhance and extend the functionality of the binder notebook computing platform. binder (http://mybinder.org), created and hosted by the Freeman Lab at HHMI Janelia, provides a fully hosted solution for executing Jupyter notebooks based in GitHub repositories; it isolates execution and provides configurability through the use of Docker containers. We would like to extend binder to support a broader range of data science tools - specifically, RStudio and other tools in the R ecosystem - as well as additional cloud hosting infrastructure and version control systems.  A key aspect of this proposal is to brainstorm and prototype support for credentials so that private resources can be used to source and execute binders (on e.g. AWS accounts and private repositories). We believe this will broaden interest and use of binder and similar resources, and ultimately drive increased adoption of fully specified and executable data narratives.
 
 
-What is the subject, and why is it important?
+## What is the subject, and why is it important?
 
 
 Fully specified and perfectly repeatable computational data analyses have long been a goal of open scientists - after all, if we can eliminate the dull parts of reproducibility, we can get on with the more exciting bits of arguing about significance, interpretation and meaning. There is also the hope that fully open and repeatable computational methods can spur reuse and remixing of these methods, and accelerate the process of computational science. We have been asymptotically approaching this in science for decades, helped by configuration and versioning tools used in open source development and devops. The emergence of fully open source virtual machine hosting, cloud computing, and (most recently) container computing means that a detailed host configuration can be shared and instantiated on demand; together with flexible interactive Web notebooks such as RStudio and Jupyter Notebook, and public hosting of source code, we can now provide code, specify the execution environment, execute a workflow, and give scientists (and others) an interactive data analysis environment in which to explore the results.
@@ -32,7 +32,7 @@ The medium term vision for binder that we hope to move towards enabling with thi
 4. A small liberal arts college, or a local state college, wants to run a data science course that occasionally makes use of big compute resources (or big data resources). By partnering with NSF XSEDE or a commercial cloud provider, the challenges of setting up accounts and providing access to non-free compute resources can be managed via the college’s SSO system, or by the faculty using e.g. Amazon’s Integrated Authentication Management.
 
 
-What is the major related work in this field?
+## What is the major related work in this field?
 
 
 I (along with many others) am interested in (a) potentially anonymous execution of full workflows, (b) within a customizable compute environment, (c) with a robust, open source software infrastructure supporting the layer between the execution platform and the interactive environment. binder is the closest fully functional example of this to date, but there are many related projects.
@@ -53,7 +53,7 @@ Outside of the Jupyter ecosystem, the R world has a collection of software that 
 After posting a draft of this proposal publicly, I found out that people at Duke (Mark McCahill and Mark DeLong and others) have been running a ~4500 person MOOC using Jupyter notebooks in Docker containers running on MS Azure. The containers live in the Azure cloud and users are mapped to their personal container by a middleware app that looks at the users’ LTI credentials and redirects them appropriately (https://github.com/mccahill/mooc-lti-jupyter). Duke is also working on federating single sign-on mechanisms (http://sites.duke.edu/dukesdn/). Presumably there are other sites that are doing similar things, and a natural outcome of this workshop might be the agglomeration of a network of people interested in this specific area.
 
 
-Why is the proposer qualified?
+## Why is the proposer qualified?
 
 
 My major qualifications for hosting the workshop are as follows:
@@ -72,7 +72,7 @@ My major qualifications for hosting the workshop are as follows:
 11. Experience in running friendly and open hackfests for open source projects (see especially https://github.com/dib-lab/2014-paper-wssspe14/blob/master/2014-wssspe14.pdf).
 
 
-What is the approach being taken?
+## What is the approach being taken?
 
 
 The approach is to run a cooperative hackathon/hackfest/workshop targeting a few specific objectives, but with flexibility to expand or change focus as determined by the participants.  The objectives are essentially as listed in my binder blog post (http://ivory.idyll.org/blog/2016-binder.html) and will incorporate any undone “future directions” listed in http://mybinder.org/faq/#future as well:
@@ -98,13 +98,13 @@ About half of the invitations will be to projects that are involved in this area
 All outputs from the workshop will be made available under an Open Source license through github or another hosting platform (which is where the binder source is currently hosted). We will also provide a livestream from workshop presentations and discussions so that the larger community can participate.
 
 
-What will be the output from the project?
+## What will be the output from the project?
 
 
 In addition to source code, demonstrations, proofs of concept, etc., I anticipate several blog posts from different perspectives. We will also plan an article targeted at a broader audience, perhaps through the O’Reilly Media outlets. I also expect to develop (and deliver) training materials around any new functionality that emerges from this workshop.
 
 
-What is the justification for the amount of money requested?
+## What is the justification for the amount of money requested?
 
 
 We anticipate fully supporting travel, room, and board for 15 people from this grant, although this number may increase or decrease depending on costs. We will also provides snacks and one restaurant dinner. No compute costs or anything else is requested - we can support the remainder of the workshop hosting entirely out of our existing resources.
@@ -117,7 +117,7 @@ We may also extend invitations out to a full week for travelers coming from far 
 
 
 
-What are the other sources of support?
+## What are the other sources of support?
 
 
 I expect to supplement travel and provide compute out of my existing Moore DDD Investigator funding and my startup funds. However, no other support explicitly for this project is being requested.
